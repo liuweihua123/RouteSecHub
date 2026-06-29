@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="public/logo.png" alt="RouteSecHub Logo" width="400" />
+
 **RPKI & BGP Routing Security Research Portal**
 
 面向 RPKI 与 BGP 路由安全研究的一站式导航与研究工作台
