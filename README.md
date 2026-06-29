@@ -6,7 +6,10 @@
 
 面向 RPKI 与 BGP 路由安全研究的一站式导航与研究工作台
 
+### 🌐 在线访问：[https://liuweihua123.github.io/RouteSecHub/](https://liuweihua123.github.io/RouteSecHub/)
+
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/liuweihua123/RouteSecHub/releases)
+[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-brightgreen)](https://liuweihua123.github.io/RouteSecHub/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178c6.svg)](https://www.typescriptlang.org/)
