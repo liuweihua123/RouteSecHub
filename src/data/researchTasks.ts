@@ -1,0 +1,58 @@
+import type { ResearchTask } from "../types";
+
+export const researchTasks: ResearchTask[] = [
+  {
+    id: "analyze-hijack",
+    name: "Analyze a Route Hijack",
+    description: "Investigate a BGP prefix hijack event using routing data, AS relationship analysis, and visualization tools. Trace the hijack origin, propagation, and impact.",
+    dataSources: ["RouteViews", "RIPE RIS", "BGPStream", "BGPKIT"],
+    tools: ["BGPStream", "BGPlay", "bgp.tools", "BGPalerter", "ARTEMIS"],
+    paperDirections: ["Route Hijack Detection", "BGP Anomaly Detection", "Routing Incident Case Study"],
+    icon: "ShieldAlert",
+  },
+  {
+    id: "analyze-leak",
+    name: "Analyze a Route Leak",
+    description: "Study a route leak event by examining AS relationships, transit policies, and BGP path analysis. Understand the role of provider-customer relationships in leaks.",
+    dataSources: ["CAIDA AS Relationship", "CAIDA ASRank", "RouteViews", "RIPE RIS"],
+    tools: ["BGPStream", "CAIDA ASRank", "bgp.tools", "MANRS"],
+    paperDirections: ["Route Leak Detection", "AS Relationship Inference", "Routing Security Measurement"],
+    icon: "GitBranch",
+  },
+  {
+    id: "query-rpki",
+    name: "Query RPKI / ROA / ROV Status",
+    description: "Check the RPKI validation status for a specific prefix or ASN. Query ROA data, VRPs, and understand Route Origin Validation results.",
+    dataSources: ["RIPEstat", "Routinator", "NIST RPKI Monitor", "Cloudflare Radar"],
+    tools: ["RIPEstat", "Routinator", "Cloudflare Radar"],
+    paperDirections: ["RPKI Adoption", "Route Origin Validation", "RPKI Misconfiguration"],
+    icon: "CheckCircle",
+  },
+  {
+    id: "download-bgp-data",
+    name: "Download Historical BGP Data",
+    description: "Retrieve BGP update and RIB data for a specific time window from RouteViews, RIPE RIS, or BGPKIT Broker for offline analysis.",
+    dataSources: ["RouteViews", "RIPE RIS", "BGPKIT Broker"],
+    tools: ["PyBGPStream", "BGPKIT", "Script Generator"],
+    paperDirections: ["BGP Anomaly Detection", "Routing Security Measurement"],
+    icon: "Database",
+  },
+  {
+    id: "as-relationship",
+    name: "Perform AS Relationship Analysis",
+    description: "Investigate the relationships between Autonomous Systems — provider-customer, peer-peer, and customer cone analysis.",
+    dataSources: ["CAIDA ASRank", "CAIDA AS Relationship", "CAIDA AS2Org", "PeeringDB"],
+    tools: ["CAIDA ASRank", "PeeringDB", "bgp.tools"],
+    paperDirections: ["AS Relationship Inference", "Route Leak Detection"],
+    icon: "Network",
+  },
+  {
+    id: "reproduce-paper",
+    name: "Reproduce a Paper Experiment",
+    description: "Reproduce experiments from routing security research papers using data sources, scripts, and tools available through RouteSecHub.",
+    dataSources: ["RouteViews", "RIPE RIS", "BGPStream", "CAIDA AS Relationship"],
+    tools: ["PyBGPStream", "BGPKIT", "Script Generator", "BGPalerter"],
+    paperDirections: ["Route Hijack Detection", "Route Leak Detection", "RPKI Adoption", "BGP Anomaly Detection"],
+    icon: "FlaskConical",
+  },
+];
