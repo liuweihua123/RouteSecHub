@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeProvider>
       <I18nProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/RouteSecHub">
           <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg-primary)", color: "var(--text-primary)" }}>
             <Navbar />
             <main className="flex-1 pt-14">
